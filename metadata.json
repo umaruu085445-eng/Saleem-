@@ -1,0 +1,6 @@
+{
+  "name": "LittleSprout Academy",
+  "description": "A joyful early-learning academy where children explore, create, play, and grow in a safe and caring environment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

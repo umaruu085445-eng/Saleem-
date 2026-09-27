@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Quicksand', 'Nunito', system-ui, sans-serif;
+  --color-sprout-bg: #FFFCF9;
+  --color-sprout-pink: #FFF1F3;
+  --color-sprout-cream: #FFF8E8;
+  --color-sprout-orange: #FF7043;
+  --color-sprout-yellow: #FFB52E;
+  --color-sprout-green: #72C83E;
+  --color-sprout-blue: #55BFEF;
+  --color-sprout-navy: #102B49;
+  --color-sprout-lavender: #F0ECFA;
+  --color-sprout-muted: #69717A;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+/* Organic blobs and soft shadows */
+.shadow-soft {
+  box-shadow: 0 10px 35px rgba(16, 43, 73, 0.08);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 18px 45px rgba(16, 43, 73, 0.12);
+}
+
+/* Subtle float animation for decorative elements */
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(2deg);
+  }
+}
+
+.animate-subtle-float {
+  animation: subtle-float 6s ease-in-out infinite;
+}
+
+.animate-subtle-float-delayed {
+  animation: subtle-float 7s ease-in-out 2s infinite;
+}
+
+/* Custom scrollbar for friendly look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFB52E;
+  border-radius: 9999px;
+  border: 2px solid #FFF8E8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7043;
+}
+
